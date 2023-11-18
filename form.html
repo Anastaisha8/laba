@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин художественной литературы</title>
+    <link href="style.css" rel="stylesheet"
+type="text/css" />
+</head>
+<body>
+    <header>
+         <!-- Логотип сайта -->
+        
+        <img src="logo.jpg" alt="Логотип сайта" height="50" width="50">
+        
+        
+        <!-- Панель навигации -->
+        <nav>
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="index.html">Главная страница</a></li>
+                
+            </ul>
+            <h1>Магазин художественной литературы</h1>
+        </nav>
+       
+
+    </header>
+    <main>
+    
+    <!-- Форма заказа -->
+    <form action="order.php" method="post">
+        <label for="fio">ФИО покупателя:</label>
+        <input type="text" id="fio" name="fio" required><br><br>
+        
+        <label for="address">Адрес доставки:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        
+        <label for="phone">Телефон:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+        
+        <label for="email">Адрес электронной почты:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="books">Книги для покупки:</label><br>
+        <input type="checkbox" id="book1" name="books[]" value="book1">
+        <label for="book1">Гарри Поттер и Узник Азкабана</label><br>
+        <input type="checkbox" id="book2" name="books[]" value="book2">
+        <label for="book2">Хроники Нарнии</label><br>
+        <input type="checkbox" id="book3" name="books[]" value="book3">
+        <label for="book3">Властелин колец</label><br><br>
+        
+        <label for="payment">Форма оплаты:</label><br>
+        <input type="radio" id="payment1" name="payment" value="cash">
+        <label for="payment1">Наличными при получении</label><br>
+        <input type="radio" id="payment2" name="payment" value="card">
+        <label for="payment2">Картой при получении</label><br><br>
+        
+        <label for="delivery-day">День доставки:</label>
+        <select id="delivery-day" name="delivery-day">
+            <option value="monday">Понедельник</option>
+            <option value="wednesday">Среда</option>
+            <option value="friday">Пятница</option>
+        </select><br><br>
+        
+        <label for="comment">Комментарий курьеру:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Заказать">
+        <input type="reset" value="Очистить форму">
+    </form>
+</main>
+    <footer>
+     <!-- Лого МИЭТ со ссылкой -->
+        <a href="https://miet.ru">
+            <img src="miet_logo.png" alt="Лого МИЭТ" height="50" width="100">
+        </a>
+        
+        <!-- Ссылки на страницы -->
+        <nav>
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="index.html">Главная страница</a></li>
+            </ul>
+        </nav>
+</footer>
+</body>
+</html>

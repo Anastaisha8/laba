@@ -1,0 +1,30 @@
+.special {
+	font-size: 40px ;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	color: #ED97A6;
+	text-shadow: 3px 3px 1px black;
+	background-color: #57413A;
+}
+html {
+	background-color: #C8E0A7;
+}
+body{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #B3A16C;
+	padding: 0px 20px 20px 20px;
+	border: 1px solid black;
+	color: #670319;
+	font-size: 20px;
+}
+a:link {
+	color: #670319 ;
+}
+a:visited {
+	color: black ;
+}
+a:hover{
+	text-decoration: none;
+}
